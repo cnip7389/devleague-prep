@@ -308,13 +308,14 @@ looptoNumber(5);
 
 //________________________________
 
-var characters = ["a", "b", "c", "d", "e"];
+
 function showEachValue (characters){
 	for (var i=0; i<characters.length; i++){
 		console.log(characters[i]);
 	}
 }
 
+var characters = ["a", "b", "c", "d", "e"];
 showEachValue(characters);
 
 /* What you put in the console.log part determines on what you want the results 
@@ -322,8 +323,9 @@ to look like. In this scenario, I want it to show character in first position
 (ie. characters[0]) followed by the character in second position 
 (ie. characters[1] and so on. Therefore, my console.log should display characters[i].*/
 
-//________________________________ NEED HELP
+//________________________________ 
 
+var array = [];
 function createArrayFromString (word){
 	for (var i = 0; i < word.length; i++){
 		if (word[i] != "A"){
@@ -332,36 +334,52 @@ function createArrayFromString (word){
 	}
 }
 
-console.log(createArrayFromString("Aloha"));
+createArrayFromString("Aloha");
+console.log(array);
 
-//________________________________ NEED HELP
+//________________________________
 
-var myArray = [2, 4, 6, 8];
+var sum = 0;
 
 function greatSummator (myArray){
 	for (var i = 0; i < myArray.length; i++){
-		return myArray[i]+myArray[i++];
+		sum += myArray[i];
 	}
+return sum;
 }
 
-var myArraySum = greatSummator(myArray);
-console.log (myArraySum);
+var myArraySum = greatSummator([1, 2, 3]);
+console.log(myArraySum);
 
-//________________________________ MAYBE WORKS?
+/* Note to self: Once computer hits "return," the loop will end. So to
+continue looping after function, store value in a variable & continue loop.*/
 
-function totalUnderWhatFor (myArraySum, total){
-	return (myArraySum < total);
+//________________________________ 
+
+var sum = 0;
+var myArray = [1, 2, 3, 4];
+var total = 10;
+function totalUnderWhatFor (myArray, total){
+	for (var i =0; i < myArray.length; i++){
+		sum += myArray[i];
+	}
+	return (sum < total);
 }
 
-console.log(totalUnderWhatFor(myArraySum, 30));
+console.log(totalUnderWhatFor(myArray, total));
 
 //________________________________ NEED HELP
 
 myBooleanArray = [true, true, false];
 
-function checkTrueValues (myBooleanArray){
-	for (var i = 0; i < myBooleanArray.length; i++){
-		return (isTrue (myBooleanArray[i])) === true;
+function checkTrueValues (BooleanArray){
+	for (var i = 0; i < BooleanArray.length; i++){
+		if (!isTrue(BooleanArray[i])){
+			return false;
+		}
 	}
+	return true;
 }
-console.log(isTrue(myBooleanArray));
+
+console.log (checkTrueValues(myBooleanArray));
+
