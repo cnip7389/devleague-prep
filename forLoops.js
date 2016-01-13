@@ -3,7 +3,7 @@
 var presidents = ["Washington", "Adams", "Jefferson", "Madison", "Monroe"];
 
 function printContent (array){
-	for (var i=0; i < 5; i++){
+	for (var i=0; i < array.length; i++){
 		console.log("Value of i is: " + [i] + "\n" +
 					"Value at Index is: " + array[i]);
 	}
@@ -11,7 +11,18 @@ function printContent (array){
 
 printContent (presidents);
 
-//QUESTION: Why do we need two parameters in function, according to assignment?
+/*QUESTION: Why do we need two parameters in function, according to assignment? Depends on where 
+you type var i & var presidents. If the function has access to it, it will still work.
+
+function printContent (array, i){
+	for (var i=0; i<array.length; i++){
+	console.log("Value of i is: " + [i]);
+	console.log ("Value at Index is: " + array [i]);
+	}
+}
+
+printContent (presidents);
+*/
 
 //___________________________
 
@@ -25,6 +36,19 @@ function appendToString(string){
 }
 
 appendToString(stringOfNumbers);
+
+/* To avoid global variables, below is the recommended format:
+
+function appendToString(stringToAppendTo, stringToAppend){
+	return string toAppendTo + stringToAppend;
+}
+
+var stringOfNumbers = '';
+
+for (var i = 10; i <= 20; i++){
+	stringofNumbers = appendToString(stringOfNumbers, i);
+}
+*/
 
 //___________________________
 
@@ -45,7 +69,7 @@ to check if it's divisible by 2. */
 var evenNumberArray2 = [];
 
 function printEvenArray2 (array){
-	for (var i = 0; i <100 ; i++){
+	for (var i = 0; i <99 ; i++){
 		if ((i % 2) === 0){
 			array.push(i);
 		}
@@ -55,18 +79,31 @@ function printEvenArray2 (array){
 
 printEvenArray2(evenNumberArray2);
 
-//___________________________ question: Need quotations for blanks?
+//___________________________ 
 
 var oopsArray = ["turn", "" , "down", "" , "for", "" , "what"];
 
 function addNope (array){
 	for (var i = 1; i < array.length; i+=2){
-		array[i] += "nope";
+		array[i] = "nope";
 	}
 	console.log (array);
 }
 
 addNope(oopsArray);
+
+/* Another way to do is use modulo & then reassign value:
+
+for (var i = 0; i < oopsArray.length; i++){
+	console.log(i, oopsArray[i]);
+	if (i % 2 === 1){
+	oopsArray[i] = "nope";
+	}
+}
+
+console.log(oopsArray);
+
+*/
 
 //___________________________ question: how to end with turn, not nope?
 
@@ -179,4 +216,47 @@ function graduateAndSetNewClass (clas){
 	}
 }
 
+// CLASS EXAMPLES
+
+/*
+
+WHILE BREAK
+
+ while (true) {
+	function2;
+	if (!condition1){
+	break;
+	}
+	function3;
+}
+
+DO WHILE
+
+do {
+	function2;
+	function3;
+} whiile (condition1);
+
+
+
+if (myGreeting === "hi"){
+	myGreeting += "!";
+} else if (myGreeting === "hello"){
+	myGreeting += "!!";
+}
+console.log(myGreeting)
+--> var myGreeting = "hello"; result would be "hello!!"
+--> var myGreeting = "hi"; result would be "hi!"
+--> var myGreeting = "bye"; result would be "bye"
+
+
+var k = 0;
+
+do {
+	if (k% 2 === 1){
+		oopsArray[k] = "nope;
+		console.log("adding nope to", k);
+	}
+	k++;
+}while (k < oopsArray.length);
 

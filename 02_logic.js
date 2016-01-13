@@ -181,7 +181,7 @@ to look like. In this scenario, I want it to show character in first position
 var array = [];
 function createArrayFromString (word){
 	for (var i = 0; i < word.length; i++){
-		if (word[i] != "A"){
+		if ((word[i] != "A") && (word[i] != "a")){
 			array.push(word[i]);
 		}
 	}

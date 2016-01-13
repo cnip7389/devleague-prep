@@ -1,4 +1,4 @@
-//FUNCTION HOMEWORK #1: TUESDAY 1/5/2016 (Assignment name: functions.md)
+//HOMEWORK #1: TUESDAY 1/5/2016 (Assignment name: functions.md)
 
 var a = 2;
 var b = 3;
