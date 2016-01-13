@@ -105,16 +105,24 @@ console.log(oopsArray);
 
 */
 
-//___________________________ question: how to end with turn, not nope?
+//___________________________ 
 
 var oopsArray = ["turn", "" , "down", "" , "for", "" , "what"];
+var backwardsArray = [];
 
-function addNope (array){
-	for (var i = oopsArray.length - 1 ; i >= 0 ; i-=2){
-  console.log (oopsArray[i], "nope");
-}}
+function addNopeBackwards (array){
+	for (var i = oopsArray.length - 1 ; i >= 0 ; i--){
+		if (i % 2 === 0){
+			backwardsArray.push(oopsArray[i]);
+		}
+		else {
+			backwardsArray.push("nope");
+		}
+	}
+	 console.log (backwardsArray);
+}
 
-addNope(oopsArray);
+addNopeBackwards(oopsArray);
 
 //___________________________question: what's the point of switching isNapTime to true?
 
@@ -206,15 +214,21 @@ var currentClass =
 ];
 
 function graduateAndSetNewClass (clas){
-	for (var i = 0; i < currentClass.length; i++){
-		if (clas.enrolled){
-			clas.graduated = "true";
+	for (var i = 0; i < clas.length; i++){
+		var student = clas[i];
+		if (student.enrolled){
+			student.graduated = true;
 		}
 		else{
-			clas.enrolled = "true";
+			student.enrolled = true;
 		}
 	}
 }
+
+graduateAndSetNewClass(currentClass);
+console.log(currentClass);
+
+
 
 // CLASS EXAMPLES
 
@@ -260,3 +274,4 @@ do {
 	k++;
 }while (k < oopsArray.length);
 
+*/
