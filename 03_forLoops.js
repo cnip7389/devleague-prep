@@ -172,7 +172,7 @@ function generateArrayOfStrings (storage){
 
 console.log(generateArrayOfStrings(miscStorage));
 
-//___________________________ NEED HELP
+//___________________________
 
 var currentClass = 
 [
@@ -213,20 +213,23 @@ var currentClass =
   }
 ];
 
-function graduateAndSetNewClass (clas){
-	for (var i = 0; i < clas.length; i++){
-		var student = clas[i];
+var newClass = [];
+
+function graduateAndSetNewClass (cohort){
+	for (var i = 0; i < cohort.length; i++){
+		var student = cohort[i];
 		if (student.enrolled){
 			student.graduated = true;
 		}
 		else{
 			student.enrolled = true;
 		}
+	newClass.push(cohort[i]);
 	}
 }
 
 graduateAndSetNewClass(currentClass);
-console.log(currentClass);
+console.log(newClass);
 
 
 
@@ -249,7 +252,7 @@ DO WHILE
 do {
 	function2;
 	function3;
-} whiile (condition1);
+} while (condition1);
 
 
 
