@@ -151,8 +151,37 @@ for (i = 0; i < 10; i++){}
 	newObject.contents.push (randomNumber(1, 20));
 }
 
-*/
+If plainBox.contents has not been defined as an array, then the .push function would not work. To define it, we can:
 
+1. box.contents = box.contents || []; <-- Assign to self if values existed. Otherwise, create an empty array.
+
+2. if (box.contents === undefined){
+
+3. if (!box.contents) {
+    box.contents = [];
+  }
+}
+
+To pull values in array randomly:
+
+function shuffle (arr){
+  var i;
+  var shuffledArr = [];
+  for (i =0; i <arr.length; i++){
+  shuffledArr[i] = arr[i]
+  }
+}
+
+Fisher-Yates shuffling algorithem
+
+for (i = arr.length - 1; i >= i; i --) {
+  var j = randomNumber (0, i+1);
+  var tmp = shuffledArr[i];
+  shuffledArr[i] = shuffledArr [j];
+  shufledArr[j] = tmp;
+}
+
+*/
 //___________________________
 
 function transmission (carObject){
@@ -195,7 +224,7 @@ console.log(riders(stockCar, passengerList, passengerAges));
 
 function printRiders (car){
 	for (var i = 0; i < car.passengers.length; i++){
-		console.log (car.passengers[i].name + ", " + car.passengers[i].age);
+		console.log (car.passengers[i].name + ", age " + car.passengers[i].age);
 	}
 }
 
