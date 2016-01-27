@@ -1,0 +1,195 @@
+body {
+	font-family: Raleway;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+#thumbnail {
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	display:block;
+	margin: 0 auto;
+	padding-top: 40px;
+	-webkit-filter: brightness(175%);
+}
+
+h1 {
+	text-align: center;
+	font-family: Playfair Display;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+nav {
+	text-align: center;
+	font-family: Arial;
+}
+
+nav ul{
+	padding:0;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline;
+	background-color: #e5f5ff;
+	border: 2px dashed #99d7ff;
+	padding: 10px;
+	font-family: American Typewriter;
+	margin: 0px;
+}
+
+nav ul li:hover{
+	background-color: #ffffff;
+}
+
+nav ul li a {
+	color: #595050;
+	text-decoration: none;
+}
+
+.line{
+	background-color: #99d7ff;
+	height: 7px;
+}
+
+#wrapper1 #intro{
+	background-color: #b3d9ff;
+	border: 1px #99ccff;
+	border-style: solid solid none solid;
+	padding: 3px 10px 10px 20px;
+	margin: 20px 0px 0px 0px;
+}
+
+#wrapper1 #intro h2{
+	font-size: 22px;
+}
+
+#diary1{
+	background-color: #e5f5ff;
+	border: 1px solid #99ccff;
+	padding: 20px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+#photo1{
+	float: right;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+#wrapper2{
+	margin-top: 100px;
+	clear:both;
+}
+
+#wrapper2 #intro{
+	background-color: #d9d9d9;
+	border: 1px #a6a6a6;
+	border-style: solid solid none solid;
+	padding: 3px 10px 10px 20px;
+	margin-top: 100px;
+}
+
+#wrapper2 #intro h2{
+	font-size: 22px;
+}
+
+#diary2{
+	background-color: #f1f1f1;
+	border: 1px solid #a6a6a6;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#diary2 table{
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid #a6a6a6;
+}
+
+
+#tableheader{
+	text-align:left;
+	background-color: #d9d9d9;
+}
+
+#tableheader th{
+	padding: 8px;
+}
+
+.tablecontents td{
+	padding: 8px;
+}
+
+#wrapper3 #intro{
+	background-color: #b3d9ff;
+	border: 1px #99ccff;
+	border-style: solid solid none solid;
+	padding: 3px 10px 10px 20px;
+}
+
+#wrapper3 #intro h3{
+	font-size: 20px;
+}
+
+#list{
+	background-color: #e5f5ff;
+	padding: 20px 0px 20px 0px;
+	line-height: 150%;
+	border: 1px solid #99ccff;
+	margin-bottom: 30px;
+}
+
+#wrapper4{
+	border: 1px solid #a6a6a6;
+	margin-bottom: 20px;
+}
+
+#wrapper4 #intro{
+	background-color: #d9d9d9;
+	padding: 3px 10px 10px 20px;
+}
+
+#wrapper4 #intro h3{
+	font-size: 20px;
+}
+
+#myform{
+	background-color: #f1f1f1;
+	padding: 20px;
+}
+
+form{
+	line-height: 170%;
+}
+
+form #email{
+	width: 100%;
+	height: 25px;
+}
+
+form #message{
+	width: 100%;
+}
+
+#yesno{
+	width: 100%;
+	text-align: justify;
+}
+
+#yesno span{
+	width: 49%;
+	display:inline-block;
+}
+
+form select{
+	width: 100%;
+}
+
+footer{
+	text-align: center;
+}

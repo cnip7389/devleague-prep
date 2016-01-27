@@ -1,100 +1,131 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Lukey - The Cutest Pup</title>
-</head>
-<body>
-	<img src="assets/lukeroo.jpg" height="40" width="40">
-	<h1>Lukey - The Cutest Pup</h1>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About me</a></li>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Contact me</a></li>
-		</ul>
-	</nav>
-	<section>
-		<h2>Woof! I'm Luke.</h2>
-		<p>February 27, 2014</p>
-		<img src="assets/lukeroo.jpg" height="40%" width="40%">
-		<p>
-			Today, I found my <strong>forever home</strong>! There is lots of room and I can sleep wherever I want. I had an accident on the carpet and momma wasn't too happy, but <u>I promise I will learn to go in the right spot!</u> I sleep a lot and momma loves to cuddle with me.
-		</p>
-		<p>
-			My favorite time of day is meal time! It happens three times a day and <em>it makes my tummy so happy.</em> After meal time, I play with my toys then take a nap. When I sleep, I dream of running around a large field and playing with other doggies. Momma says my dreams are so vivid that I actually move my legs in my sleep.
-		</p>
-	</section>
-		<h2>My First Play Date</h2>
-		<p>April 20th, 2014</p>
-		<p>Today, momma took me to the dog park for the first time. I had no idea there were so many other doggies in the world! I had so much fun meeting new friends and chasing them around.
-		</p>
-		<table border="1">
-			<tr>
-				<th>Team 1</th>
-				<th>Team 2</th>
-				<th>Winning Team</th>
-				<th>Final Score</th>
-			</tr>
-			<tr>
-				<td>Lukey & Rocky</td>
-				<td>Allie & Doodle</td>
-				<td>Lukey & Rocky</td>
-				<td>5 - 3</td>
-			</tr>
-			<tr>
-				<td>Puggle & Sami</td>
-				<td>Hunter & Buddy</td>
-				<td>Hunter & Buddy</td>
-				<td>6 - 4</td>
-			</tr>
-			<tr>
-				<td>Emma & Cookie</td>
-				<td>Cornflake & Mochi</td>
-				<td>Emma & Cookie</td>
-				<td>10 - 7</td>
-			</tr>
-		</table>
-		<h3>To-Do List</h3>
-		<p>June 13, 2014</p>
-		<ul>
-			<li>Go to the pet store for:
-				<ol>
-					<li>Dog Food</li>
-					<li>Chew Toy</li>
-					<li>Peanut Butter Toothpaste</li>
-					<li>A huge bag of treats</li>
-				</ol>
-			</li>
-			<li>Play fetch</li>
-			<li>Dig a hole in the yard</li>
-			<li>Chew on socks</li>
-			<li>Learn to roll over
+	<head>
+		<title>Lukey - The Cutest Pup</title>
+		<link href="css/styles.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="thumbnail">
+		<img src="assets/lukeroo.jpg" height="45px" width="auto"></div>
+		<h1>The Lukey Chronicles</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#wrapper1">Blog</a></li>
+				<li><a href="#wrapper4">Contact</a></li>
+			</ul>
+		</nav>
+		<br /> <br />
+		<div class="line"></div>
+
+		<div id="wrapper1">
+			<div id="intro">
+				<h2>Woof! I'm Luke.</h2>
+				<p>February 27, 2014</p>
+				</div> <!-- intro -->
+			<div id="diary1">
+				<img id="photo1" src="assets/lukeroo.jpg" height="30%" width="30%">
+				<p>
+					Today, I found my <strong>forever home</strong>! There is lots of room and I can sleep wherever I want. I had an accident on the carpet and momma wasn't too happy, but <u>I promise I will learn to go in the right spot!</u> I sleep a lot and momma loves to cuddle with me.
+					<br /> <br />
+					My favorite time of day is meal time! It happens three times a day and <em>it makes my tummy so happy.</em> After meal time, I play with my toys then take a nap. When I sleep, I dream of running around a large field and playing with other doggies. Momma says my dreams are so vivid that I actually move my legs in my sleep.
+				</p>
+			</div> <!-- diary1 -->
+		</div> <!-- wrapper1 -->
+
+		<div id="wrapper2">
+			<div id="intro">
+				<h2>My First Play Date</h2>
+				<p>April 20th, 2014</p>
+			</div> <!-- intro -->
+			<div id="diary2">
+				<p>Today, momma took me to the dog park for the first time. I had no idea there were so many other doggies in the world! I had so much fun meeting new friends and chasing them around.
+				</p>
+				<table>
+					<tr id="tableheader">
+						<th>Team 1</th>
+						<th>Team 2</th>
+						<th>Winning Team</th>
+						<th>Final Score</th>
+					</tr>
+					<tr class="tablecontents">
+						<td>Lukey & Rocky</td>
+						<td>Allie & Doodle</td>
+						<td>Lukey & Rocky</td>
+						<td>5 - 3</td>
+					</tr>
+					<tr class="tablecontents">
+						<td>Puggle & Sami</td>
+						<td>Hunter & Buddy</td>
+						<td>Hunter & Buddy</td>
+						<td>6 - 4</td>
+					</tr>
+					<tr class="tablecontents">
+						<td>Emma & Cookie</td>
+						<td>Cornflake & Mochi</td>
+						<td>Emma & Cookie</td>
+						<td>10 - 7</td>
+					</tr>
+				</table>
+			</div><!-- diary2 -->
+		</div><!-- wrapper2 -->
+
+		<div id="wrapper3">
+			<div id="intro">
+				<h3>To-Do List</h3>
+				<p>June 13, 2014</p>
+			</div> <!-- intro -->
+			<div id="list">
 				<ul>
-					<li>First learn "down"</li>
-					<li>Then follow the treat in a loop</li>
+					<li>Go to the pet store for:
+						<ol>
+							<li>Dog Food</li>
+							<li>Chew Toy</li>
+							<li>Peanut Butter Toothpaste</li>
+							<li>A huge bag of treats</li>
+						</ol>
+					</li>
+					<li>Play fetch</li>
+					<li>Dig a hole in the yard</li>
+					<li>Chew on socks</li>
+					<li>Learn to roll over
+						<ul>
+							<li>First learn "down"</li>
+							<li>Then follow the treat in a loop</li>
+						</ul>
+					</li>
 				</ul>
-			</li>
-		</ul>
-	<section>
-		<h3>Contact Me</h3>
-		<p>Say woof or hello! I welcome doggie and hooman friends.</p>
-		<form>
-			Your Email: <input type="text"><br />
-			Message: <textarea rows="9" cols="30"></textarea><br />
-			<p>Curious, are you from Hawaii?</p>
-			<input type="radio">Yes<br />
-			<input type="radio">No<br />
-			<input type="checkbox">First time to my site?<br />
-			<select>
-				<option>Pupster</option>
-				<option>Hooman</option>
-			</select><br />
-			<input type="submit">
-		</form>
-	</section>
-	<footer>
-		<p>lukeroo 2014</p>
-	</footer>
-</body>
+			</div><!-- list-->
+		</div><!-- wrapper3 -->
+
+		<div id="wrapper4">
+			<div id="intro">
+				<h3>Contact Me</h3>
+				<p>Say woof or hello! I welcome doggie and hooman friends.</p>
+			</div><!--intro-->	
+			<div id="myform">			
+				<form>
+					Your Email: <br /><input id="email" type="text"><br /><br />
+					Message: <br /><textarea id="message" rows="9" cols="30"></textarea><br />
+					Curious, are you from Hawaii? <br />
+						<div id="yesno">
+							<span><input type="radio">Yes</span>
+							<span><input type="radio">No</span>
+						</div>
+						<br />
+					<input type="checkbox">First time to my site?<br /><br />
+					<select>
+						<option>Pupster</option>
+						<option>Hooman</option>
+					</select><br /><br />
+					<input type="submit">
+				</form>
+			</div><!-- myform -->
+		</div>
+		<div class="line"></div>
+		<footer>
+			<p>&copy Lukeroo 2016</p>
+		</footer>
+	</body>
 </html>
